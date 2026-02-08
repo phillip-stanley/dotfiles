@@ -1,16 +1,18 @@
 clear
 #neofetch --ascii_distro manjaro_small
 # Use powerline
-USE_POWERLINE="true"
+USE_POWERLINE="false"
 # Source manjaro-zsh-configuration
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then
   source /usr/share/zsh/manjaro-zsh-config
 fi
-# Use manjaro zsh prompt
-if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
-  source /usr/share/zsh/manjaro-zsh-prompt
-fi
-source /usr/share/nvm/init-nvm.sh
+#Use manjaro zsh prompt
+#if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
+#  source /usr/share/zsh/manjaro-zsh-prompt
+#fi
+#source /usr/share/nvm/init-nvm.sh
+eval "$(starship init zsh)"
+
 
 # bun completions
 [ -s "/home/stan/.bun/_bun" ] && source "/home/stan/.bun/_bun"
@@ -34,4 +36,5 @@ alias la="ls -la"
 
 # utils
 alias lg="lazygit"
+alias n="nvim ."
 
