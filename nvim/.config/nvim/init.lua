@@ -33,6 +33,7 @@ require("lazy").setup({
 	require("plugins.formatting"),
 	require("plugins.database"),
 	require("plugins.neotree"),
+	require("plugins.outline"),
 	--require("plugins.debugging"),
 	"LazyVim/LazyVim",
 	optional = true,
